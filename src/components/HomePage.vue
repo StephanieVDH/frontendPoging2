@@ -3,12 +3,12 @@
       <!-- Header Section -->
       <header class="header">
         <div class="container header-content">
-          <img src="../assets/LogoBig.png" alt="Logo" class="logo" />
+          <img src="../assets/LogoBig.png" alt="Logo" class="logo" /> <br> <br>
           <nav class="nav">
            <!-- <a href="../components/CampingSpots.vue">Explore Spots</a> -->
            <router-link to="ExploreSpots">Explore Spots</router-link>
             <a href="#">Host a spot</a>
-            <router-link to="/login" class="btn"> Log in </router-link>
+            <router-link to="/login" class="btn login"> Log in </router-link>
           </nav>
         </div>
       </header>
@@ -65,9 +65,9 @@
       <!-- Footer Section -->
       <footer class="footer">
         <div class="container footer-content">
-          <img src="/logo.png" alt="Logo" class="logo" />
+          <img src="../assets/LogoSmall.png" alt="Logo" class="logo" />
           <nav class="footer-nav">
-            <a href="#">Explore Camping</a>
+            <router-link to="ExploreSpots">Explore Spots</router-link>
             <a href="#">Join Us</a>
             <a href="#">Host a Spot</a>
             <a href="#">Get Help</a>
@@ -98,7 +98,7 @@
     padding: 20px 0;
   }
   .btn {
-    background-color: #007bff;
+    background-color: #639f69;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -107,7 +107,7 @@
     margin-right: 10px;
   }
   .btn.login {
-    background-color: #555;
+    padding: 10px;
   }
   
   /* Header Styles */
@@ -116,11 +116,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    background-color: #04540c;
   }
   .nav a {
     margin-right: 15px;
     text-decoration: none;
-    color: #333;
+    color: #ddd;
   }
   
   /* Hero Section Styles */
@@ -156,14 +157,14 @@
   
   /* Footer Styles */
   .footer {
-    background-color: #f7f7f7;
+    background-color: #04540c;
     padding: 20px 0;
     text-align: center;
   }
   .footer-nav a {
     margin-right: 15px;
     text-decoration: none;
-    color: #333;
+    color: #ddd;
   }
 
   /*/ Pics */
