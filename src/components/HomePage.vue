@@ -7,9 +7,8 @@
           <nav class="nav">
            <!-- <a href="../components/CampingSpots.vue">Explore Spots</a> -->
            <router-link to="ExploreSpots">Explore Spots</router-link>
-            <a href="#">More Options</a>
-            <button class="btn">Sign Up</button>
-            <button class="btn login">Login</button>
+            <a href="#">Host a spot</a>
+            <router-link to="/login" class="btn"> Log in </router-link>
           </nav>
         </div>
       </header>
