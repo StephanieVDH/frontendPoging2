@@ -2,6 +2,8 @@
 node_modules
 /dist
 
+assets
+pics
 
 # local env files
 .env.local
