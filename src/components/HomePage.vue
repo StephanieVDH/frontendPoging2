@@ -6,7 +6,7 @@
           <img src="../assets/LogoBig.png" alt="Logo" class="logo" />
           <nav class="nav">
            <!-- <a href="../components/CampingSpots.vue">Explore Spots</a> -->
-            <RouterLink to="/campingspots">Explore Spots</RouterLink>
+           <router-link to="ExploreSpots">Explore Spots</router-link>
             <a href="#">More Options</a>
             <button class="btn">Sign Up</button>
             <button class="btn login">Login</button>

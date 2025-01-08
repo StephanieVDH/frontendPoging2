@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <HomePage>Poging 2</HomePage>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+/* eslint-disable */
 import HomePage from './components/HomePage.vue';
+import ExploreSpots from './components/ExploreSpots.vue';
 
 export default {
   name: 'App',
   components: {
-    HomePage
+    HomePage,
+    ExploreSpots
   }
 }
 </script>
