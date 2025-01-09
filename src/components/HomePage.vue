@@ -24,7 +24,7 @@
           </p>
           <img src="../assets/pics/pic4.jpg" alt="BLABLA" class="hero-image" />
           <br> <br>
-          <button class="btn">Explore</button>
+          <router-link to="ExploreSpots" class="btn">Explore</router-link>
         </div>
       </section>
   
@@ -70,8 +70,6 @@
             <router-link to="ExploreSpots">Explore Spots</router-link>
             <a href="#">Join Us</a>
             <a href="#">Host a Spot</a>
-            <a href="#">Get Help</a>
-            <a href="#">Contact Us</a>
           </nav>
         </div>
       </footer>
@@ -122,23 +120,24 @@
     margin-right: 15px;
     text-decoration: none;
     color: #ddd;
+    align-items: center;
   }
   
   /* Hero Section Styles */
   .hero {
     background-color: #f7f7f7;
-    padding: 50px 0;
+    padding: 30px 0;
     text-align: center;
   }
   .hero-image {
     background: #ddd;
-    height: 450px;
-    margin-top: 20px;
+    height: 400px;
+    margin-top: 10px;
   }
   
   /* Explore Section Styles */
   .explore {
-    padding: 50px 0;
+    padding: 30px 0;
     text-align: center;
   }
   .features {

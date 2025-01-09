@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import HomePage from "@/components/HomePage.vue"; 
 import ExploreSpots from "@/components/ExploreSpots.vue";
 import Login from "@/components/Login.vue";
-//import CampingDetails from "@/components/CampingDetails.vue";
+import CampingDetails from "@/components/CampingDetails.vue";
 
 Vue.use(VueRouter);
 
@@ -18,6 +18,12 @@ const routes = [
     path: '/explorespots',
     name: 'ExploreSpots',
     component: ExploreSpots,
+  },
+
+  {
+    path: '/explorespots/:id',
+    name: 'CampingDetails',
+    component: CampingDetails,
   },
 
   {
