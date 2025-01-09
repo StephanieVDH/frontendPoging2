@@ -7,7 +7,7 @@
           <p class="price">€{{ spot.Price }} per night</p>
           <div class="description">
             <h2>About this spot</h2>
-            <p>{{ spot.Description }}</p>
+            <p>{{ spot.LongDescription }}</p>
           </div>
           <!-- Add more details as needed -->
         </div>

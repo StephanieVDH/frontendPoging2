@@ -11,6 +11,7 @@
           </router-link>
           </h2>
 
+          <p>{{ spot.ShortDescription }}</p>
           <p class="camping-price">€{{ spot.Price }} per night</p>
         </div>
       </div>
