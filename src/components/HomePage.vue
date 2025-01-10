@@ -96,15 +96,6 @@ export default {
       this.userType = userType;
     }
   },
-  methods: {
-    navigateToProfile() {
-      if (this.userType === 'Host') {
-        this.$router.push('/host-profile');
-      } else if (this.userType === 'Customer') {
-        this.$router.push('/customer-profile');
-      }
-    },
-  },
 };
 </script>
   

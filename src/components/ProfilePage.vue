@@ -3,30 +3,30 @@
     <h1>{{ userInfo.name }}</h1>
     <nav class="navbar">
       <ul class="nav-links">
-        <li><router-link to="/" @click.native="goHome">Home</router-link></li>
+        <li><router-link to="/">Home</router-link></li>
         <li><button @click="logout">Log Out</button></li>
       </ul>
     </nav>
-    <!-- Profile page for Hosts-->
-    <div v-if="userType === 'Host'">
-      <h2>Your information</h2>
+
+    <h2>Your information</h2>
       <p>Email: {{ userInfo.email }}</p>
       <p>Phone number: {{ userInfo.phonenumber }}</p>
+
+    <!-- Profile page for Hosts-->
+    <div v-if="userType === 'Host'">
       <h3>Your Camping Spots</h3>
       <ul>
         <li v-for="spot in userInfo.campingSpots" :key="spot.id">
           {{ spot.name }} - {{ spot.location }}
         </li>
       </ul>
-      <button class="add-spot-btn" @click="navigateToAddSpot">
-        Add a New Camping Spot
+      <button class="add-spot-btn" @click="navigateToAddNewSpot">
+        Add New Spot
       </button>
     </div>
+
     <!-- Profile page for Users-->
     <div v-if="userType === 'Customer'">
-      <h2>Customer Information</h2>
-      <p>Name: {{ userInfo.name }}</p>
-      <p>Email: {{ userInfo.email }}</p>
       <h3>Your Bookings</h3>
       <ul>
         <li v-for="booking in userInfo.bookings" :key="booking.id">
@@ -50,13 +50,13 @@ export default {
         window.location.href = '/';
       });
     },
-    goHome() {
-      this.$router.push('/').catch(() => {
-        window.location.href = '/';
-      });
-    },
-    navigateToAddSpot() {
-      this.$router.push('/add-spot');
+    // goHome() {
+    //   this.$router.push('/').catch(() => {
+    //     window.location.href = '/';
+    //   });
+    // },
+    navigateToAddNewSpot() {
+      this.$router.push('/addnewspot');
     }
   },
   data() {
