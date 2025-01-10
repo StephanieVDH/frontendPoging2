@@ -6,6 +6,7 @@ import Login from "@/components/Login.vue";
 import CampingDetails from "@/components/CampingDetails.vue";
 import ProfilePage from "@/components/ProfilePage.vue";
 import AddNewSpot from "@/components/AddNewSpot.vue";
+import CreateAccount from "@/components/CreateAccount.vue";
 
 Vue.use(VueRouter);
 
@@ -32,6 +33,12 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+
+  {
+    path: '/create-account',
+    name: 'CreateAccount',
+    component: CreateAccount
   },
 
   {

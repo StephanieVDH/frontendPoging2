@@ -30,7 +30,13 @@
     </form>
 
     <p v-if="errorMessage" class="error-message">{{ errorMessage }}</p>
+    <br> <p>Don't haven an account yet?</p>
+    <div>
+        <button type="button" @click="redirectToCreateAccount">Create account</button>
+      </div>
   </div>
+
+  
 </template>
 
 <script>
@@ -46,6 +52,9 @@ data() {
 },
 
 methods: {
+  redirectToCreateAccount() {
+      this.$router.push('/create-account'); // Assuming Vue Router is used
+    },
   async login() {
   this.loading = true;
   this.errorMessage = '';
@@ -75,20 +84,20 @@ methods: {
     localStorage.setItem('userType', data.userType);
     
     // Success message
-    alert('Login successful!');
-    this.$router.push('/');
-  } catch (error) {
-    console.error('Login error:', error);
-    this.errorMessage = error.message;
-    alert(this.errorMessage);
-  } finally {
-    this.loading = false;
+      alert('Login successful!');
+      this.$router.push('/');
+    } catch (error) {
+      console.error('Login error:', error);
+      this.errorMessage = error.message;
+      alert(this.errorMessage);
+    } finally {
+      this.loading = false;
+    }
   }
 }
-},
-
 };
 </script>
+
 
 <style scoped>
 .login-page {
