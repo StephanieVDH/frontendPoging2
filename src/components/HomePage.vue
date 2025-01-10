@@ -8,7 +8,10 @@
           <router-link to="/ExploreSpots">Explore Spots</router-link>
           <router-link v-if="!userLoggedIn" to="/login" class="btn login">Log in</router-link>
           <div v-else class="profile-menu">
-            <img src="../assets/user.png" alt="Profile" class="profile-icon" @click="navigateToProfile" />
+         <!--   <img src="../assets/user.png" alt="Profile" class="profile-icon" @click="navigateToProfile" /> -->
+            <router-link to="/profile">
+              <img src="../assets/user.png" alt="Profile" class="profile-icon" />
+            </router-link>
           </div>
         </nav>
       </div>

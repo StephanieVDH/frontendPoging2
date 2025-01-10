@@ -34,17 +34,11 @@ const routes = [
   },
 
   {
-    path: '/host-profile',
-    name: 'HostProfile',
-    component: ProfilePage,
-    meta: { userType: 'Host' },
+    path: '/profile',
+    name: 'ProfilePage',
+    component: ProfilePage
   },
-  {
-    path: '/customer-profile',
-    name: 'CustomerProfile',
-    component: ProfilePage,
-    meta: { userType: 'Customer' },
-  },
+
   {
     path: '*',
     redirect: '/', // Redirect to home for unmatched routes
